@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["cleblanc87@gmail.com"]
   spec.description   = "Create gifs from your integration tests"
   spec.summary       = "Create gifs from your integration tests"
-  spec.homepage      = "github.com/cleblanc87/integration_giffer"
+  spec.homepage      = "http://github.com/cleblanc87/integration_giffer"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rake"
+  spec.add_dependency "selenium-webdriver"
+  spec.add_dependency "rmagick"
 end
